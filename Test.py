@@ -38,3 +38,20 @@ import pandas as pd
 # If we want to see in which branch we are, we could perform the command "git branch" and the branch in where we are
 # This new branch could be seen only when a "git add ." and a "git commit -m "Commit"" are done (so that the branch is no more local)
 # And then we could see that after the commit, we need to push the commit now into the branch "Rename" in this way "git push origin Rename"
+# And then, after we have done it also with the buttons on the left column here, we could go on git hub, compare&accept the pull request and merge the results/branch changes into the main
+# Even after the pull request (bit before the merge one) we could see tha changes and the SHA code correlated with the commit, that we could copy&paste to return to original code if we have made some mistakes
+# Going into the Open PR, we could go on the "three dots" icon and click on "Edit" and write all the changes done
+# Usually before the merging, all the developers will leave a "review" on the left column on github and then the boss will see the reviews and complete the "merge" operation
+
+# To delete the branch "Rename" that we have used to make changes and merge them in "main" we will use the command "git branch -D Rename"  (where "Rename" is the name of the branch to delete)
+# To confirm how many branches we have then, we could do the command "git branch" (and see if there is only "*main" as branch)
+# But the changes that we have made could not be present into the files of the main, thus we need to do the command "git pull origin main" (used to pull the updated main from the github origin)
+
+# If we want to enter/have a certain branch that another developer have performed, we could see the name of the branch on github, then use the command "git checkout NAME_WANTED_BRANCH"
+
+
+# .GITIGNORE FILE
+# In this file we will put all the information that should not be loaded publicly online/on github (ad for the ".env" file where the API key are placed; or the "error_log" errors and functions)
+# Thus, in this .gitignore file, we should put the names (below "/coverage") of the files (like ".env") that should not be loaded online in the code repository
+
+# Builder's Console Log --> It is the forum to look for examples
